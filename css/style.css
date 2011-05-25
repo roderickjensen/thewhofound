@@ -1,0 +1,784 @@
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+html{
+	font-family:"Helvetica", Arial, sans-serif;
+	color:#e4eef6;
+}
+body{
+	background:none;
+	padding:50px 0;
+	color: #1f1f1f;
+}
+#page{
+	margin:0 auto;
+	float:none;
+	text-align:center;
+}
+a,a:hover {
+	text-decoration:none;
+}
+a:hover {
+	color:#fff;
+}
+
+#nav {
+	background: #1f1f1f;
+	color: #fff;
+	text-shadow: none;
+	padding: 3px 0;
+	width: 45%;
+	float: left;
+	position: relative;
+	top: 13px;
+}
+	#nav li {
+		padding: 0 10px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-weight: 100;
+		font-size: 10pt;
+		color: #f8b800;
+	}
+	#nav li:last-child {
+		border: 0;
+	}
+
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+h1{
+	font-weight:bold;
+	font-size:3em;
+	line-height:1;
+	padding: 40px 20px;
+	margin: 0 0 20px;
+	text-shadow: none;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 50%;
+	float: left;
+}
+
+h1 img {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+h2 { width: 45%; text-align: right; float: left; text-transform: uppercase; line-height: 22pt; font-weight: 600; font-size: 21pt; color: #1f1f1f;}
+
+a{
+	color:inherit;
+}
+
+
+ul.grid {
+	list-style: none;
+}
+	ul.grid li {
+		padding-left: 20px;
+	}
+	input{
+		background-color:#1f1f1f;
+		color: #f8b800;
+		border:0;
+	}
+	textarea{
+		background-color:#1f1f1f;
+		color: #f8b800;
+		border:0;
+		width:400px;
+		height:200px;
+	}
+
+
+/*------------------------------------*\
+	IMAGES
+\*------------------------------------*/
+
+#outerContainer {
+	background: #1f1f1f;
+	padding: 15px;
+}
+.container { 
+	background-color: #f8b800;
+	padding: 25px 15px 15px;
+	position: relative;
+}
+.container.main {
+	display: none;
+	padding-top: 0;
+}
+.container.feltron {
+	display: none;
+	border-top: 15px solid #1f1f1f;
+}
+
+.container.nojs {
+	text-align: center;
+	font-size: 20pt;
+}
+	.container.nojs a {
+		border-bottom: 1px solid #2f2f2f;
+	}
+
+.container.footer {
+	height: 150px;
+	border-top: 15px solid #1f1f1f;
+	background-color: #fff;
+}
+.container.footer li{
+	font-size:12px;
+	font-weight:400;
+}
+.container.footer h3{
+	font-weight:600;
+}
+.container.footer a:hover{
+	color:#666;
+}
+
+.container.thejob {
+	border-top: 15px solid #1f1f1f;
+}
+
+.thejob p,.contact .grid .data-container.copy,.contact .partners {
+	font-size: 13pt;
+}
+	
+#header.container {
+	height: 115px;
+	z-index: 2000;
+}
+	
+
+#header h1 {
+	margin:0px;
+	position: relative;
+    top: -30px;
+    right: -8px;
+}
+
+.feltron h1 {
+	clear: both;
+	width: 100%;
+	margin: 0 0 15px;
+	padding: 0;
+	border-bottom: 1px solid #1f1f1f;
+}
+
+#logo{
+	margin-bottom:1.5em;
+}
+
+.grid div {
+	margin-bottom: 20px;
+}
+
+.grid.square, .grid .square {
+	display: block;
+	background: #F8B800;
+	border: 3px solid #1E1E1E;
+}
+
+.grids.quarters .square {
+}
+
+.grid .longform {
+
+}
+	.grid .longform form {
+		padding: 5px 10px 10px 7px;
+	}
+		.grid .longform form textarea,.grid .longform form input.text {
+			width: 98%;
+			padding: 2%;
+			max-width: none;
+		}
+		.grid .longform form * {
+			margin: 4px 0;
+		}
+		.grid .longform form input.submit {
+			float: right;
+			clear: both;
+			position: relative;
+			right: -2px;
+			margin-bottom: 10px;
+		}
+
+.grid.two {
+	background: #1f1f1f;
+	min-height: 490px;
+	background-color: #f8b800;
+}
+
+.grids.feltron {
+	border-top: 15px solid #1f1f1f;
+}
+
+.grids.footer {
+	height: 200px;
+	width: 103%;
+	border-top: 15px solid #1f1f1f;
+	background: #fff;
+}
+
+.car {
+	background-color: #aaa;
+	height: 640px;
+	position: relative;
+}
+
+div#graph {
+	list-style: none;
+	position: relative;
+	top: 107px;
+	padding: 0;
+	display: block;
+	width: 100%;
+	background: transparent;
+	margin: 0;
+}
+	div#graph p {
+		padding: 0;
+		display: block;
+		float: left;
+		margin-right: 17px;
+		width: 30px;
+		background: #1F1F1F;
+		height: 40px;
+		position: absolute;
+		bottom: -5px;
+	}
+	div#graph p:last-child {
+		margin: 0 0 0 2px;
+	}
+	
+	div#graph p#creative {
+		height: 193px;
+		padding-top: 77px;
+		background: url('http://media.thewhosearch.com/images/creative.jpg') top center no-repeat #1F1F1F;
+		left: 0;
+	}
+	div#graph p#question-1 {
+		left: 45px;
+		height: 40px;
+		padding-top: 16px;
+		background: url('http://media.thewhosearch.com/images/questionmark.jpg') top center no-repeat #1F1F1F;
+	}
+	div#graph p#question-2 {
+		left: 95px;
+		padding-top: 16px;
+		height: 60px;
+		background: url('http://media.thewhosearch.com/images/questionmark.jpg') top center no-repeat #1F1F1F;
+	}
+	div#graph p#question-3 {
+		left: 145px;
+		padding-top: 16px;
+		height: 50px;
+		background: url('http://media.thewhosearch.com/images/questionmark.jpg') top center no-repeat #1F1F1F;
+	}
+	div#graph p#strategic {
+		height: 173px;
+		padding-top: 77px;
+		background: url('http://media.thewhosearch.com/images/strategic.jpg') top center no-repeat #1F1F1F;
+		left: 188px;
+		bottom: 16px;
+	}
+
+.partners {
+	position: relative;
+	top: 63px;
+	font-size:13px;
+}
+
+.meettheboard {
+}
+	.meettheboard #images {
+		padding: 5px 5px 12px 4px;
+		margin: 0 auto;
+		min-height: 198px;
+	}
+		.meettheboard a #images img {
+			margin: 4px 3px 5px 5px;
+			border: 2px solid #000;
+		}
+		
+	.meettheboard .viewmore { position: relative; top: -8px; display: block; margin: 0 auto; width: 85%; }
+
+.data-container.grid-12 {
+	background: transparent;
+}
+.data-container.grid-12.copy {
+	font-size:14px;
+}
+
+	.data-container .grid-4 {
+		margin:0px 5px 0 0;
+		padding: 5px;
+		background: transparent;
+	}
+	.data-container .grid-4:last-child {
+		margin: 0 0 0;
+	}
+
+.inventory.tab {
+	display: block;
+	background: #cd0d30;
+	color: #fff;
+	width: 150px;
+	position: absolute;
+	z-index: 10000;
+	top: -21px;
+	left: 0;
+}
+.title {
+	font-size:20px;
+	padding: 5px 5px 0;
+    font-weight: 600;
+	margin-bottom: 0;
+	color: #f8b800;
+	position: relative;
+	z-index: 0;
+}
+.subtitle {
+	display: block;
+	line-height: 12pt;
+	font-size:14px;
+	padding: 0 5px 5px;
+	margin: -25px 0 0;
+	font-weight: 600;
+	color: #f8b800;
+	z-index: 100;
+}
+
+.title,.subtitle {
+	display: block;
+	background: #1f1f1f;
+	clear: both;
+}
+
+.graph { }
+.graph .title {
+	position: relative;
+	top: 88px;
+	padding-top: 2px;
+}
+.graph .subtitle {
+	position: relative;
+	top: 88px;
+	padding-bottom: 10px;
+}
+
+.feltron h3 {
+	border-bottom: 1px solid #1f1f1f;
+	font-size: 9pt;
+	font-weight: 100;
+	margin: 0;
+	position: relative;
+	top: 6px;
+}
+.feltron .partners h3 { top: 0; margin-bottom: 15px;}
+.feltron h4 {
+	font-size: 32pt;
+	font-weight: 700;
+	padding: 0;
+	margin: 0 0 18px;
+}
+
+/*------------------------------------*\
+	NARROW
+\*------------------------------------*/
+/*
+CSS for tablets and narrower devices
+*/
+
+
+
+
+
+@media (min-width: 721px) and (max-width: 960px){}
+/*--- END NARROW ---*/
+
+
+
+
+
+/*------------------------------------*\
+	MOBILE
+\*------------------------------------*/
+/*
+CSS for mobile devices.
+Linearise it!
+*/
+
+
+
+
+
+@media (max-width: 720px){
+body{
+	font-size:0.75em;
+}
+}
+/*--- END MOBILE ---*/
+
+.half {
+	width: 48.6%; margin: 0; float: left;
+}
+
+.versus { border: 0; }
+
+#whovswho { position: relative; display: block; min-height: 204px; }
+	#whovswho .help { padding: 5px 10px 6px;  -moz-border-radius: 15px; /* FF1+ */
+  -webkit-border-radius: 15px; /* Saf3-4, iOS 1+, Android 1.5+ */
+          border-radius: 15px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+
+  /* useful if you don't want a bg color from leaking outside the border: */        
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+width: 40%; height: 15px; margin: 0 auto; display: block; position: absolute; top: 10px; left: 27%; text-align: center; z-index: 200;
+		background-color: #888888;
+		  background-image: -webkit-gradient(linear, left top, left bottom, from(#888888), to(#444444)); /* Saf4+, Chrome */
+		  background-image: -webkit-linear-gradient(top, #888888, #444444); /* Chrome 10+, Saf5.1+ */
+		  background-image:    -moz-linear-gradient(top, #888888, #444444); /* FF3.6 */
+		  background-image:     -ms-linear-gradient(top, #888888, #444444); /* IE10 */
+		  background-image:      -o-linear-gradient(top, #888888, #444444); /* Opera 11.10+ */
+		  background-image:         linear-gradient(top, #888888, #444444);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#888888', EndColorStr='#444444');
+
+		font-weight: 100; font-size: 9pt; color: #ddd; text-shadow: #000 0 1px 0;
+		 -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, .6); /* FF3.5+ */
+	  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .6); /* Saf3.0+, Chrome */
+	          box-shadow: 0px 1px 3px rgba(0, 0, 0, .6); /* Opera 10.5, IE9, Chrome 10+ */
+		opacity: .85;
+	}
+		#whovswho .help span { position: relative; top: -1px; }
+	#whovswho .check {
+		position: absolute;
+		top: 0;
+		float: right;
+		z-index: 200;
+		padding: 0;
+		margin: -20px 0 0;
+		height: 118px;
+		width: 210px;
+		text-align: center;
+		font-size: 155px;
+		color: #fcfcfc;
+		text-shadow: rgba(0, 0, 0, .5) 1px 1px 0, #fff -1px -1px 0;
+		opacity: .8;
+		display: none;
+	}
+	#whovswho .half { padding: 60px 10px 10px; width: 210px; position: relative; height: 134px; overflow: hidden; background-position: center center; background-repeat: repeat-x; cursor: pointer; }
+	#whovswho .half.right { position: absolute; right: 0; top: 0; }
+	#whovswho .name { clear: both; font-weight: 600; font-size: 14pt; padding: 0; margin: 0; color: #f8d800; line-height: 14pt; text-shadow: rgba(68, 4, 0, .8) 0 2px 0; position: absolute; bottom: 35px; left: 10px; }
+		#whovswho #challenger .name { right: 10px; text-align: right; }
+	
+	#whovswho h3,#whovswho h4 { position: absolute; top: 0; left: 5px; color: #333; }
+	#whovswho h4 { top: 25px; }
+	#whovswho #V { position: absolute; right: -2px; top: 26%; font-size: 100px; color: #f5e343; text-shadow: rgba(0, 0, 0, .6) 0 3px 6px; }
+	#whovswho #S { position: absolute; left: -5px; top: 26%; font-size: 100px; color: #f5e343; text-shadow: rgba(0, 0, 0, .6) 0 3px 6px; }
+	
+	#whovswho .fighter { width: 90px; height: 90px; padding: 0; float: left; background-position: center center; background-repeat: no-repeat; }
+	#whovswho #challenger .fighter { float: right; position: absolute; top: 0; right: 0; }
+	#whovswho .percentage { font-size: 14pt; font-weight: bold; position: absolute; bottom: 5px; margin: 0; text-shadow: #000 -0px -1px 0; color: #fff; line-height: 30px; }
+		#whovswho .percentage small { font-size: 16pt; letter-spacing: 1px; }
+		#whovswho #challenger .percentage { right: 10px; }
+		
+		#clicktovote {
+			display: none;
+			position: absolute;
+			z-index: 4000;
+			color: #1f1f1f;
+			text-shadow: rgba(248,184,0,.8) 0 1px;
+		}
+		
+h1 #O {
+	width: 103px;
+	height: 100px;
+
+	padding: 0;
+	margin: 0 12px 0 0;
+	position: relative;
+	right: -270px;
+	background-position: center center;
+}
+#O img { margin: 0; padding: 0; position: relative; top: 17px; }
+
+
+.thejob h1,.contact h1 {
+	border-bottom: 0;
+}
+
+
+#tweets { color: #333; }
+#twitter { position: relative; }
+	#twitter, .query { text-align: left;  }
+		#twitter .tweet_list, .query .tweet_list {
+			font: 10pt/12pt helvetica, arial, sans-serif;
+	    	list-style-type: none;
+	    	margin: 10px 0 0;
+	    	padding: 0;
+	    	overflow-y: auto;
+			display: block;
+		}
+	    	#twitter .tweet_list li, .query .tweet_list li {
+	    	  	overflow-y: auto;
+	    	  	overflow-x: hidden;
+	    	  	padding: 10px 0;
+			  	margin: 0 auto;
+				border-top: 1px dotted #d69600;
+			  	border-top: 1px dotted rgba(248, 184, 0, .8);
+				width: 440px;
+				max-width: 440px;
+			}
+			#twitter .tweet_list li:first-child {
+				border: 0;
+			}
+	    		.tweet .tweet_list li a, .query .tweet_list li a { color: #0C717A; }
+	    		#twitter .tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even { background-color: #91E5E7; }
+	    		#twitter .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar { padding-right: .5em; float: left; }
+					.tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img { vertical-align: middle; }
+			#twitter .tweet_list .tweet_user { font-weight: bold; display: block; }
+			#twitter .tweet_list .tweet_time a { font-size: 8pt; display: block; color: #c58500; margin-bottom: 4px; }
+			
+		
+			a.viewmore,a.addtweet {
+				text-decoration: none;
+				display: block;
+				padding: 0 6px 4px;
+				border: 1px solid #936c00;
+				border-top: 1px solid #a47d11;
+				line-height: 14pt;
+				vertical-align: middle;
+				 -moz-border-radius: 2px; /* FF1+ */
+			  -webkit-border-radius: 2px; /* Saf3-4, iOS 1+, Android 1.5+ */
+			          border-radius: 2px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+
+			  /* useful if you don't want a bg color from leaking outside the border: */        
+			  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+				opacity: .9;
+				background: #d69600;
+			  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8b800), to(#d69600)); /* Saf4+, Chrome */
+			  background-image: -webkit-linear-gradient(top, #f8b800, #d69600); /* Chrome 10+, Saf5.1+ */
+			  background-image:    -moz-linear-gradient(top, #f8b800, #d69600); /* FF3.6 */
+			  background-image:     -ms-linear-gradient(top, #f8b800, #d69600); /* IE10 */
+			  background-image:      -o-linear-gradient(top, #f8b800, #d69600); /* Opera 11.10+ */
+			  background-image:         linear-gradient(top, #f8b800, #d69600);
+	            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8b800', EndColorStr='#d69600'); /* IE6–IE9 */
+				color: #333;
+				text-shadow: rgba(255, 255, 255, .6) 1px 1px 1px;
+				
+				text-align: center;
+				border-top-left-radius: 2px 2px;
+				border-top-right-radius: 2px 2px;
+				border-bottom-right-radius: 2px 2px;
+				border-bottom-left-radius: 2px 2px;
+				max-height: 24px;
+				margin: 0;
+				 -moz-border-radius: 4px; /* FF1+ */
+			  -webkit-border-radius: 4px; /* Saf3-4, iOS 1+, Android 1.5+ */
+			          border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+
+			  /* useful if you don't want a bg color from leaking outside the border: */        
+			  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+				
+				position: absolute;
+			}
+			#twitter a.addtweet {
+				bottom: 5px;
+				right: 5px;
+				font-size: 14pt;
+			}
+			
+			#twitter a.viewmore {
+				bottom: 5px;
+				right: 35px;
+				font-size: 10pt;
+				line-height: 10pt;
+				padding-top: 4pt;
+			}
+			a.viewmore:active,a.addtweet:active {
+				position: absolute;
+				bottom: 15px;
+				max-height: 24px;
+				padding: 0 6px 4px;
+				line-height: 10pt;
+				margin: 0;
+			}
+			
+			#twitter a.viewmore:hover,#twitter a.addtweet:hover { opacity: 1; }
+			#twitter a.viewmore:active,#twitter a.addtweet:active {
+				background-color: #d69600;
+			  background-image: -webkit-gradient(linear, left top, left bottom, from(#d69600), to(#f8b800)); /* Saf4+, Chrome */
+			  background-image: -webkit-linear-gradient(top, #d69600, #f8b800); /* Chrome 10+, Saf5.1+ */
+			  background-image:    -moz-linear-gradient(top, #d69600, #f8b800); /* FF3.6 */
+			  background-image:     -ms-linear-gradient(top, #d69600, #f8b800); /* IE10 */
+			  background-image:      -o-linear-gradient(top, #d69600, #f8b800); /* Opera 11.10+ */
+			  background-image:         linear-gradient(top, #d69600, #f8b800);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#d69600', EndColorStr='#f8b800'); /* IE6–IE9 */
+				border-top: 1px solid #f8b800;
+			}
+			#twitter a.addtweet:active {
+				top: 229px;
+				right: 5px;
+				
+				height: 24px;
+				max-height: 24px;
+				line-height: 24px;
+				vertical-align: middle;
+				padding: 0px 6px 0px;
+				border-top: 1px solid #f8b800;
+			}
+			#twitter a.viewmore:active {
+				top: 229px;
+				right: 35px;
+				
+				height: 24px;
+				max-height: 24px;
+				line-height: 24px;
+				vertical-align: top;
+				padding: 0px 6px 0;
+				border-top: 1px solid #f8b800;
+			}
+			
+		.mostimportantjob { position: relative; max-height: 190px;}
+		.boykovideo { max-height: 174px; }
+			body #mikehughes_video { max-width: 220px; width: 220px; margin: 20px; }
+			
+.whowantstohelp .icons { padding: 7px 10px 0; margin: 0; }
+	.icons a { margin: 0; padding: 0; display: block; float: left; margin: 5px 7px 4px; }
+	.whowantstohelp .icons img {
+		margin: 0;
+		border: 1px solid #1F1F1F;
+		 -moz-border-radius: 6px; /* FF1+ */
+	  -webkit-border-radius: 6px; /* Saf3-4, iOS 1+, Android 1.5+ */
+	          border-radius: 6px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+
+	  /* useful if you don't want a bg color from leaking outside the border: */        
+	  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+	}
+	
+.clear { clear: both; float: none; height: 0; width: 100%; }
+
+.grid .square.richmond { border: 0; padding: 0; border: 3px solid #1f1f1f; background-color: #1f1f1f; }
+	#richmond_images { height: 124px; width: 214px; margin: 0 auto; display: block; overflow: hidden;}
+	
+#goodfit {
+	min-height: 19px;
+	background: url('http://media.thewhosearch.com/images/brandcenter.png') bottom center no-repeat;
+}
+#goodfit a {
+	font-size: 18pt;
+	text-align: center;
+	padding: 50px 0 0;
+	display: block;
+	height: 92px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #f8b800;
+	font-weight: 700;
+}
+#mikehughes_video_container,#rickboyko_video_container {
+	display: none;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+}
+#mikehughes_video_container .background,#rickboyko_video_container .background {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+	#mikehughes_video_container .youtube,#rickboyko_video_container .youtube {
+		display: block;
+		background: #fff;
+		border: 10px solid #333;
+		width: 560px;
+		margin: 10% auto 0;
+		-moz-box-shadow: 0px 0px 80px rgba(248,184,0,.3); /* FF3.5+ */
+	  -webkit-box-shadow: 0px 0px 80px rgba(248,184,0,.3); /* Saf3.0+, Chrome */
+	          box-shadow: 0px 0px 80px rgba(248,184,0,.3); /* Opera 10.5, IE9, Chrome 10+ */
+	}
+	#goodfit_close {  }
+
+.grid .addthis_toolbar,.grid .atclear { margin: 0; padding: 0; height: 0; }
+
+#messagereceived {
+	position: absolute;
+	top: 13%;
+	width: 960px;
+	z-index: 9999;
+	font-size: 14pt;
+	text-shadow: 0 1px rgba(255,255,255,.3);
+}
+	#messagereceived p {
+		text-align: center;
+		width: 60%;
+		margin: 0 auto;
+		border: 10px solid #1F1F1F;
+		padding: 20px 0;
+		background: rgba(248,184,0,.95);
+		-moz-box-shadow: 0px 0px 20px #000; /* FF3.5+ */
+	  -webkit-box-shadow: 0px 0px 20px #000; /* Saf3.0+, Chrome */
+	          box-shadow: 0px 0px 20px #000; /* Opera 10.5, IE9, Chrome 10+ */
+	}
+	
+	
+	
+	.youtube object { min-height: 360px; z-index: 9998; position: relative; }
+	.video-player { min-height: 300px; z-index: 9998; position: relative; }
+	    .video-controls { 
+	      background: #dedede; 
+	      height: 30px;
+	      margin: -4px 0 0;
+	      position: relative;
+	      width: 100%;
+	    }
+	    .status { height: 20px; left: 30px; position: absolute; top: 5px; width: 520px; }
+	    .bar { background: #a4a4a4; height: 10px; position: relative; top: 5px; }
+	    .loaded { background: #bbb; height: 10px; left: 0; position: absolute; top: 0; }
+	    .indicator { background: #212121; display: block; height: 10px; left: 0; position: absolute; top: 0; width: 20px; }
+	    .play-pause { 
+	      background: url('http://media.thewhosearch.com/images/btn-controls.png') no-repeat ;
+	      display: block;
+	      height: 20px;
+	      overflow: hidden;
+	      position: absolute;
+	      text-indent: -9999px;
+	      top: 5px;
+	      width: 20px;
+	    }
+	    .play-pause { left: 5px; }
+	    .playing { background-position: 0 -20px; }
+	    .volume { background-position: 0 -60px; right: 130px; }
+	    .muted { background-position: 0 -40px; }
+	    .view-youtube { 
+	      color: #000;
+	      display: block; 
+	      float: right; 
+	      font-size: 9px; 
+	      line-height: 30px;
+			height: 300px;
+	      padding: 0 5px 0 0;
+	      text-decoration: none;
+	      text-transform: uppercase;
+	    }
+#searchDay { display: inline; }
+
+
+body:after {
+	content: url(http://media.thewhosearch.com/images/richmond/1.jpg) url(http://media.thewhosearch.com/images/richmond/2.jpg) url(http://media.thewhosearch.com/images/richmond/3.jpg) url(http://media.thewhosearch.com/images/richmond/4.jpg) url(http://media.thewhosearch.com/images/richmond/5.jpg) url(http://media.thewhosearch.com/images/richmond/6.jpg) url(http://media.thewhosearch.com/images/richmond/7.jpg) url(http://media.thewhosearch.com/images/richmond/8.jpg) url(http://media.thewhosearch.com/images/richmond/9.jpg) url(http://media.thewhosearch.com/images/versus/1.jpg) url(http://media.thewhosearch.com/images/versus/2.jpg) url(http://media.thewhosearch.com/images/versus/3.jpg) url(http://media.thewhosearch.com/images/versus/4.jpg) url(http://media.thewhosearch.com/images/versus/5.jpg) url(http://media.thewhosearch.com/images/versus/6.jpg) url(http://media.thewhosearch.com/images/versus/7.jpg) url(http://media.thewhosearch.com/images/versus/8.jpg) url(http://media.thewhosearch.com/images/versus/9.jpg) url(http://media.thewhosearch.com/images/versus/10.jpg) url(http://media.thewhosearch.com/images/versus/11.jpg) url(http://media.thewhosearch.com/images/versus/12.jpg) url(http://media.thewhosearch.com/images/versus/13.jpg) url(http://media.thewhosearch.com/images/versus/14.jpg) url(http://media.thewhosearch.com/images/versus/15.jpg) url(http://media.thewhosearch.com/images/versus/16.jpg) url(http://media.thewhosearch.com/images/versus/17.jpg) url(http://media.thewhosearch.com/images/versus/18.jpg) url(http://media.thewhosearch.com/images/versus/19.jpg) url(http://media.thewhosearch.com/images/versus/20.jpg) url(http://media.thewhosearch.com/images/versus/21.jpg) url(http://media.thewhosearch.com/images/versus/22.jpg) url(http://media.thewhosearch.com/images/versus/23.jpg) url(http://media.thewhosearch.com/images/versus/24.jpg) url(http://media.thewhosearch.com/images/versus/25.jpg) url(http://media.thewhosearch.com/images/versus/26.jpg) url(http://media.thewhosearch.com/images/versus/27.jpg);
+	display: none;
+}
