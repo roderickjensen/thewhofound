@@ -332,10 +332,10 @@ $(function(){
 	
 	$('#days_open').html(daysSince(start, now));
 	
-	wait_start = new Date(2011,02,14);
+	wait_start = new Date(2011,02,11);
 	$('#searchDay').html(searchDay(wait_start, now));
 	
-	rory_days_account_management = new Date(2008,05,14);
+	rory_days_account_management = new Date(2008,05,30);
 	$('#rory_days_account_management').html(searchDay(rory_days_account_management, now));
 
 	birth_date = new Date(1985,10,19);
