@@ -263,7 +263,7 @@ function rand ( n ) {
 $(function(){
 	$("#tweets").tweet({
 		count: 2,
-  		query: "rory jensen + -roderick",
+  		query: "roderick jensen + -rory jensen",
   		loading_text: "Searching twitter...",
 		refresh_interval: 5
 	});
