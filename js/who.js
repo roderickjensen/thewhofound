@@ -263,11 +263,11 @@ function rand ( n ) {
 $(function(){
 	$("#tweets").tweet({
 		count: 2,
-  		query: '"rory jensen" OR "roderick jensen"',
+  		query: '"rory jensen" OR "roderick jensen" OR "roderickjensen"',
   		loading_text: "Searching twitter...",
 		refresh_interval: 5
 	});
-	$('#twitter').append('<a class="addtweet" href="http://search.twitter.com/search?q=rory%20jensen+OR+roderick%20jensen&lang=all">+</a>');
+	$('#twitter').append('<a class="addtweet" href="http://search.twitter.com/search?q=rory+jensen+OR+roderick+jensen+OR+roderickjensen&lang=all">+</a>');
 	$('#twitter').append('<a class="viewmore" href="http://twitter.com/share?url=http%3A%2F%2Fwww.roderickjensen.com">Share</a>');
 	
 	versus.load();
