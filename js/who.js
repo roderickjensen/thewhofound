@@ -268,7 +268,7 @@ $(function(){
 		refresh_interval: 5
 	});
 	$('#twitter').append('<a class="addtweet" href="http://search.twitter.com/search?q=rory%20jensen+OR+roderick%20jensen&lang=all">+</a>');
-	$('#twitter').append('<a class="viewmore" target="_blank" href="http://twitter.com/share?url=http%3A%2F%2Fwww.roderickjensen.com">Share</a>');
+	$('#twitter').append('<a class="viewmore" href="http://twitter.com/share?url=http%3A%2F%2Fwww.roderickjensen.com">Share</a>');
 	
 	versus.load();
 	board.load();
