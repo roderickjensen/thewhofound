@@ -1,8 +1,4 @@
 $(function () {
-	if (window.location.host == 'www.roderickjensen.com') {
-		$('html').html('');
-	}
-	
 	$('.container.main').css('display','block');
 	$('.container.feltron').css('display','block');
 
