@@ -263,11 +263,11 @@ function rand ( n ) {
 $(function(){
 	$("#tweets").tweet({
 		count: 2,
-  		query: "roderick jensen + -rory jensen",
+  		query: '"rory jensen" OR "roderick jensen"',
   		loading_text: "Searching twitter...",
 		refresh_interval: 5
 	});
-	$('#twitter').append('<a class="addtweet" href="http://search.twitter.com/search?q=brandcenter%20%2B%20-brandcenter.org&lang=all">+</a>')
+	$('#twitter').append('<a class="addtweet" href="http://search.twitter.com/search?q=rory%20jensen+OR+roderick%20jensen&lang=all">+</a>')
 	$('#twitter').append('<a class="viewmore" target="_blank" href="http://twitter.com/share?url=http%3A%2F%2Fwww.thewhosearch.com">Share</a>');
 	
 	versus.load();
@@ -275,43 +275,102 @@ $(function(){
 	richmond.load();
 	goodfit.load();
 	
-	$('#mikehughes_video').live('click', function (e) {
+	var video1_close = function () {
+		$('#video1_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	};
+
+	$('#video1').live('click', function (e) {
 		e.preventDefault();
-		$('#mikehughes_video_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
+		$('#video1_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
 	});
-	$('#mikehughes_video_close').live('click', function (e) {
+	$('#video1_close').live('click', function (e) {
 		e.preventDefault();
-		$('#mikehughes_video_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+		$('#video1_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
 	});
 	
+	$('#video1_container .background').live('click', function (e) {
+		e.preventDefault();
+		$(this).find('.playing').click();
+		video1_close();
+	});
+
 	$('.youtube').ytchromeless();
-	
-	$('#rickboyko_video').live('click', function (e) {
+
+	var video2_close = function () {
+		$('#video2_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	};
+
+	$('#video2').live('click', function (e) {
 		e.preventDefault();
-		$('#rickboyko_video_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
+		$('#video2_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
 	});
-	$('#rickboyko_video_close').live('click', function (e) {
+	$('#video2_close').live('click', function (e) {
 		e.preventDefault();
-		boyko_close();
+		$('#video2_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
 	});
-	
-	$('#mikehughes_video_container .background').live('click', function (e) {
+
+	$('#video2_container .background').live('click', function (e) {
 		e.preventDefault();
 		$(this).find('.playing').click();
-		hughes_close();
-	});
-	$('#rickboyko_video_container .background').live('click', function (e) {
-		e.preventDefault();
-		$(this).find('.playing').click();
-		boyko_close();
+		video2_close();
 	});
 	
-	var hughes_close = function () {
-		$('#mikehughes_video_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	var video3_close = function () {
+		$('#video3_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
 	};
-	var boyko_close = function () {
-		$('#rickboyko_video_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+
+	$('#video3').live('click', function (e) {
+		e.preventDefault();
+		$('#video3_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
+	});
+	$('#video3_close').live('click', function (e) {
+		e.preventDefault();
+		$('#video3_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	});
+
+	$('#video3_container .background').live('click', function (e) {
+		e.preventDefault();
+		$(this).find('.playing').click();
+		video3_close();
+	});
+	
+	var video4_close = function () {
+		$('#video4_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
 	};
+
+	$('#video4').live('click', function (e) {
+		e.preventDefault();
+		$('#video4_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
+	});
+	$('#video4_close').live('click', function (e) {
+		e.preventDefault();
+		$('#video4_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	});
+
+	$('#video4_container .background').live('click', function (e) {
+		e.preventDefault();
+		$(this).find('.playing').click();
+		video4_close();
+	});
+	
+	var video5_close = function () {
+		$('#video5_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	};
+
+	$('#video5').live('click', function (e) {
+		e.preventDefault();
+		$('#video5_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
+	});
+	$('#video5_close').live('click', function (e) {
+		e.preventDefault();
+		$('#video5_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	});
+
+	$('#video5_container .background').live('click', function (e) {
+		e.preventDefault();
+		$(this).find('.playing').click();
+		video5_close();
+	});
 	
 	
 	$('#recommend_form input:text, #recommend_form textarea').live('focus', function (e) {
@@ -326,6 +385,25 @@ $(function(){
    			$(this).val($(this).attr('rel'));
    		}
    	});
+	
+	var video6_close = function () {
+		$('#video6_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	};
+
+	$('#video6').live('click', function (e) {
+		e.preventDefault();
+		$('#video6_container').css({ display: 'block' }).animate({ opacity: 1 }, 200);
+	});
+	$('#video6_close').live('click', function (e) {
+		e.preventDefault();
+		$('#video6_container').animate({ opacity: 0 }, 200, function () { $(this).css({ display: 'none' }) });
+	});
+
+	$('#video6_container .background').live('click', function (e) {
+		e.preventDefault();
+		$(this).find('.playing').click();
+		video6_close();
+	});
 	
 	start = new Date(1996,0,1);
 	now = new Date();
